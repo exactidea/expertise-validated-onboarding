@@ -7,72 +7,55 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fafafa; color: #1a1a1a; }
-    .wrap { max-width: 600px; margin: 0 auto; padding: 3rem 1.5rem; }
-    .logo { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #888; margin-bottom: 3rem; }
-    h1 { font-size: 26px; font-weight: 600; line-height: 1.3; margin-bottom: 1rem; }
-    .sub { font-size: 16px; color: #555; line-height: 1.6; margin-bottom: 3rem; }
-    .step { display: flex; gap: 1.25rem; margin-bottom: 2rem; align-items: flex-start; }
-    .step-num { width: 32px; height: 32px; border-radius: 50%; background: #1a1a1a; color: #fff; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
-    .step-body h2 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
-    .step-body p { font-size: 15px; color: #555; line-height: 1.6; }
-    .step-body a { color: #1a1a1a; font-weight: 500; }
-    .step-body code { background: #f0f0f0; padding: 2px 8px; border-radius: 4px; font-size: 13px; font-family: monospace; }
-    .divider { border: none; border-top: 1px solid #e8e8e8; margin: 2.5rem 0; }
-    .session-box { background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 1.5rem; margin-top: 1rem; }
-    .session-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; margin-bottom: 8px; }
-    .session-url { font-size: 14px; color: #1a1a1a; word-break: break-all; line-height: 1.6; }
-    .note { font-size: 13px; color: #888; margin-top: 8px; line-height: 1.5; }
-    .footer { margin-top: 4rem; font-size: 13px; color: #aaa; }
+    .wrap { max-width: 560px; margin: 0 auto; padding: 4rem 1.5rem; }
+    .logo { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #aaa; margin-bottom: 3rem; }
+    h1 { font-size: 26px; font-weight: 600; line-height: 1.35; margin-bottom: 1rem; }
+    .sub { font-size: 16px; color: #555; line-height: 1.7; margin-bottom: 3rem; }
+    .instruction { background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 1.75rem; margin-bottom: 1.5rem; }
+    .instruction-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: #aaa; margin-bottom: 10px; }
+    .instruction-text { font-size: 16px; font-weight: 500; color: #1a1a1a; line-height: 1.6; margin-bottom: 12px; }
+    .instruction-sub { font-size: 14px; color: #888; line-height: 1.6; }
+    .instruction-sub a { color: #1a1a1a; font-weight: 500; text-decoration: underline; }
+    .divider { border: none; border-top: 1px solid #ebebeb; margin: 2rem 0; }
+    .permission-box { background: #fff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 1.75rem; }
+    .permission-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: #aaa; margin-bottom: 10px; }
+    .permission-text { font-size: 16px; font-weight: 500; color: #1a1a1a; line-height: 1.6; margin-bottom: 12px; }
+    .permission-sub { font-size: 14px; color: #888; line-height: 1.6; }
+    .footer { margin-top: 4rem; font-size: 13px; color: #ccc; line-height: 1.6; }
   </style>
 </head>
 <body>
   <div class="wrap">
 
-    <div class="logo">Expertise Validated</div>
+    <div class="logo">Expertise Validated · Exact Idea</div>
 
-    <h1>You're two minutes away from your session.</h1>
-    <p class="sub">Follow these steps in order. Each one takes less than a minute. By the end you'll have everything connected and your personalized session will be ready.</p>
+    <h1>One step before your session begins.</h1>
+    <p class="sub">You purchased Expertise Validated. Before we open your session there is one thing to connect. It takes less than a minute.</p>
 
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-body">
-        <h2>Confirm you have Claude Pro</h2>
-        <p>Go to <a href="https://claude.ai" target="_blank">claude.ai</a> and sign in. You need a Pro account ($20/month) to run your session. If you don't have one, <a href="https://claude.ai" target="_blank">upgrade here</a> before continuing.</p>
-      </div>
-    </div>
-
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-body">
-        <h2>Connect Notion to Claude</h2>
-        <p>In Claude, go to <strong>Settings → Connected Apps</strong>. Search for Notion. Click Connect and allow access when prompted. Come back here when it's done.</p>
-      </div>
-    </div>
-
-    <div class="step">
-      <div class="step-num">3</div>
-      <div class="step-body">
-        <h2>Connect Airtable to Claude</h2>
-        <p>Same process. Settings → Connected Apps → Airtable → Connect → Allow. Come back when done.</p>
-      </div>
-    </div>
-
-    <div class="step">
-      <div class="step-num">4</div>
-      <div class="step-body">
-        <h2>Connect Slack to Claude</h2>
-        <p>Same process. Settings → Connected Apps → Slack → Connect → Allow. Come back when done.</p>
+    <div class="instruction">
+      <div class="instruction-label">Step 1 of 1</div>
+      <div class="instruction-text">Connect Notion to your Claude account.</div>
+      <div class="instruction-sub">
+        In Claude go to <strong>Settings → Connected Apps</strong>. Find Notion and click Connect. Allow access when prompted. Come back here when it's done.<br><br>
+        Don't have Claude Pro? <a href="https://claude.ai" target="_blank">Start here first.</a>
       </div>
     </div>
 
     <hr class="divider">
 
-    <div class="step">
-      <div class="step-num">5</div>
-      <div class="step-body">
-        <h2>Start your session</h2>
-        <p>All three tools connected? Open Claude, start a new conversation, paste the link below as your first message, and press enter. Your personalized session begins immediately.</p>
-        <div class="session-box">
-          <div class="session-label">Your session link</div>
-          <div class="session-url">YOUR_NOTION_PRIMER_URL_HERE</div>
-          <div
+    <div class="permission-box">
+      <div class="permission-label">Once Notion is connected</div>
+      <div class="permission-text">Ask Claude to read this page.</div>
+      <div class="permission-sub">
+        Open Claude. Start a new conversation. Tell Claude: <strong>"I have a session waiting at start.exactidea.com — please read it and let me know what you find."</strong><br><br>
+        Claude will read the page, confirm your session details are ready, and ask your permission before doing anything further.
+      </div>
+    </div>
+
+    <div class="footer">
+      Expertise Validated is a product of Exact Idea. You initiated this session through a purchase at exactidea.com. Questions? Reply to your confirmation email.
+    </div>
+
+  </div>
+</body>
+</html>
